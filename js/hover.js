@@ -70,6 +70,8 @@ var hoverEffect = function(opts) {
         return check;
     };
 
+
+
     var imgW = 2400;
     var imgH = 1344;
     var imgR = imgW / imgH;
@@ -104,7 +106,7 @@ var hoverEffect = function(opts) {
     // };
 
     var loader = new THREE.TextureLoader();
-    loader.crossOrigin = "";
+    //loader.crossOrigin = "";
     var texture1 = loader.load(image1,console.log('load1'),console.log('p1'),console.log('error1'));
     var texture2 = loader.load(image2,console.log('load2'),console.log('p2'),console.log('error2'));
 
@@ -241,15 +243,15 @@ var hoverEffect = function(opts) {
     animate();
 };
 
-const mq = window.matchMedia('(min-width: 960px)');
+const mq = window.matchMedia('(min-width: 720px)');
 if (mq.matches) {
         new hoverEffect({
         parent: document.querySelector('.canvas'),
         trigger: document.getElementsByClassName('trigger')[0],
         intensity: 0.3,
         hover: true,
-        image1: 'folder/6dfd5c739760c45297d1b85fd8745af5.png',
-        image2: 'folder/25636.png',
+        image1: 'folder/46291-dikaya_mestnost-ozero-pustynya-boloto-priroda-1920x1080.jpg',
+        image2: 'folder/917510540.jpg',
         displacementImage: 'folder/polosy-linii-chb-stripes-lines-black-white.png'
     });
 }

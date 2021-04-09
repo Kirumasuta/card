@@ -2,6 +2,10 @@
     top: 0;
     position: absolute;
 }
+
 .canvas{
-    float: left;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
 }
