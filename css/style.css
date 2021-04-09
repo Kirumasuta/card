@@ -1,0 +1,7 @@
+.trigger{
+    top: 0;
+    position: absolute;
+}
+.canvas{
+    float: left;
+}
