@@ -1,6 +1,29 @@
+@font-face {
+    font-family: MariageAntD;
+    src: local('fonts/19317.ttf');
+    font-family: Wingdings;
+    src: local('fonts/0.ttf');
+    font-family: a_AlternaSw;
+    src: local('fonts/1.ttf');
+    font-family: Maiandra GD;
+    src: local('fonts/3.ttf');
+    font-family: Parchment;
+    src: local('fonts/4.ttf');
+    font-family: Poor Richard;
+    src: local('fonts/5.ttf');
+    font-family: Webdings;
+    src: local('fonts/6.ttf');
+}
+
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
 .trigger{
     top: 0;
     position: absolute;
+    z-index: 999;
 }
 
 .canvas{
@@ -8,4 +31,19 @@
     width: 100%;
     height: 100%;
     top: 0;
+    z-index: 1;
+}
+
+.center{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    align-items: center;
+    display: flex;
+}
+
+.center label{
+    font-family: MariageAntD;
+    font-size: 500%;
 }

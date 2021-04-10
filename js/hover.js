@@ -174,6 +174,8 @@ var hoverEffect = function(opts) {
                     ease: easing
                 });
             }
+
+
             swapSides();
 
         });
@@ -191,13 +193,15 @@ var hoverEffect = function(opts) {
     {
         canvas.css("height",  window.screen.height);
         canvas.css("width", window.screen.height*16/9);
-        canvas.css('margin-left','-' + (window.screen.height*16/9-$(window).width())/2 + 'px')
+        canvas.css('margin-left','-' + (window.screen.height*16/9-$(window).width())/2 + 'px');
+        canvas.css('margin-top','-' + (window.screen.height*16/9-$(window).height())/2 + 'px');
     }
     else
     {
         canvas.css("height",  window.screen.width*9/16);
         canvas.css("width", window.screen.width);
-        canvas.css('margin-left','-' + (window.screen.width-$(window).width())/2 + 'px')
+        canvas.css('margin-left','-' + (window.screen.width-$(window).width())/2 + 'px');
+        canvas.css('margin-top','-' + (window.screen.height-$(window).height())/2 + 'px');
     }
 
 
@@ -210,12 +214,14 @@ var hoverEffect = function(opts) {
             canvas.css("height",  window.screen.height);
             canvas.css("width", window.screen.height*16/9);
             canvas.css('margin-left','-' + (window.screen.height*16/9-$(window).width())/2 + 'px')
+            canvas.css('margin-top','-' + (window.screen.height*16/9-$(window).height())/2 + 'px');
         }
         else
         {
             canvas.css("height",  window.screen.width*9/16);
             canvas.css("width", window.screen.width);
             canvas.css('margin-left','-' + (window.screen.width-$(window).width())/2 + 'px')
+            canvas.css('margin-top','-' + (window.screen.height-$(window).height())/2 + 'px');
         }
 
     });
@@ -248,10 +254,10 @@ if (mq.matches) {
         new hoverEffect({
         parent: document.querySelector('.canvas'),
         trigger: document.getElementsByClassName('trigger')[0],
-        intensity: 0.3,
+        intensity: 0.6,
         hover: true,
-        image1: 'folder/46291-dikaya_mestnost-ozero-pustynya-boloto-priroda-1920x1080.jpg',
-        image2: 'folder/917510540.jpg',
-        displacementImage: 'folder/polosy-linii-chb-stripes-lines-black-white.png'
+        image1: 'folder/3.jpg',
+        image2: 'folder/2.jpg',
+        displacementImage: 'folder/disp.jpg'
     });
 }
