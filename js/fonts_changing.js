@@ -8,7 +8,7 @@ var centralize = function (){
 centralize();
 
 window.addEventListener("resize",centralize);
-var i = 0;
+/*var i = 0;
 label.addEventListener("mouseenter",function (){
     //label.css('font-family','Webdings');
     var fonts = ['Webdings','Parchment', 'Poor Richard','Maiandra GD','a_AlternaSw','Wingdings'];
@@ -24,4 +24,4 @@ label.addEventListener("mouseleave",function (){
     //label.css('font-family','MariageAntD');
     label.style.fontFamily = 'MariageAntD';
     centralize();
-});
+});*/

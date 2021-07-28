@@ -72,11 +72,6 @@ var hoverEffect = function(opts) {
 
 
 
-    var imgW = 2400;
-    var imgH = 1344;
-    var imgR = imgW / imgH;
-
-    //var cW = window.innerHeight * imgR;
     var cW = parent.offsetWidth;
 
     var scene = new THREE.Scene();
@@ -107,8 +102,8 @@ var hoverEffect = function(opts) {
 
     var loader = new THREE.TextureLoader();
     //loader.crossOrigin = "";
-    var texture1 = loader.load(image1,console.log('load1'),console.log('p1'),console.log('error1'));
-    var texture2 = loader.load(image2,console.log('load2'),console.log('p2'),console.log('error2'));
+    var texture1 = loader.load(image1);
+    var texture2 = loader.load(image2);
 
     var disp = loader.load(dispImage);
     disp.wrapS = disp.wrapT = THREE.RepeatWrapping;
@@ -254,7 +249,7 @@ if (mq.matches) {
         new hoverEffect({
         parent: document.querySelector('.canvas'),
         trigger: document.getElementsByClassName('trigger')[0],
-        intensity: 0.6,
+        intensity: 0.05,
         hover: true,
         image1: 'folder/3.jpg',
         image2: 'folder/2.jpg',
