@@ -10,10 +10,15 @@
     src: url("../fonts/Monoton-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'Cyberpunk';
+    src: url("../fonts/3.ttf");
+}
+
 body{
     overflow-y: hidden;
     overflow-x: hidden;
-    background-color: rgba(4,4,4,0.75);
+    background-color: #222831;
 }
 
 .trigger{

@@ -1,5 +1,5 @@
 var templateText = ['loading','подождите, пока не готово.','ロシアのデジタル'];
-var templateFont = ['Monoton-Regular','F77 Minecraft','Nico Moji'];
+var templateFont = ['Cyberpunk','F77 Minecraft','Nico Moji'];
 
 var label = document.getElementById('changing');
 var circle_el = document.getElementById('container');
