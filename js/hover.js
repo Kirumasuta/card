@@ -252,7 +252,7 @@ if (mq.matches) {
         intensity: 0.05,
         hover: true,
         image1: 'folder/3.jpg',
-        image2: 'folder/2.jpg',
+        image2: 'folder/landscape.jpg',
         displacementImage: 'folder/disp.jpg'
     });
 }

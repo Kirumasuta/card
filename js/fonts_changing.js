@@ -5,7 +5,7 @@
 //     label.style.marginLeft = ($(window).width() - label.offsetWidth)/2 + 'px';
 // };
 //
-// centralize();
+//  centralize();
 //
 // window.addEventListener("resize",centralize);
 //

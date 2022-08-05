@@ -5,9 +5,15 @@
     src: url("../fonts/1.ttf");
 }
 
+@font-face {
+    font-family: "Monoton-Regular";
+    src: url("../fonts/Monoton-Regular.ttf");
+}
+
 body{
     overflow-y: hidden;
     overflow-x: hidden;
+    background-color: rgba(4,4,4,0.75);
 }
 
 .trigger{
