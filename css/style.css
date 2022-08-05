@@ -1,18 +1,8 @@
+.wf-nicomoji { font-family: "Nico Moji"; }
+
 @font-face {
-    font-family: MariageAntD;
-    src: local('fonts/19317.ttf');
-    font-family: Wingdings;
-    src: local('fonts/0.ttf');
-    font-family: a_AlternaSw;
-    src: local('fonts/1.ttf');
-    font-family: Maiandra GD;
-    src: local('fonts/3.ttf');
-    font-family: Parchment;
-    src: local('fonts/4.ttf');
-    font-family: Poor Richard;
-    src: local('fonts/5.ttf');
-    font-family: Webdings;
-    src: local('fonts/6.ttf');
+    font-family: "F77 Minecraft";
+    src: url("../fonts/1.ttf");
 }
 
 body{
@@ -44,6 +34,6 @@ body{
 }
 
 .center label{
-    font-family: MariageAntD;
+
     font-size: 500%;
 }

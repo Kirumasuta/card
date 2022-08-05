@@ -3,28 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
     <title>Hello</title>
 </head>
 <body>
 
-<div class="center label">
+<!--<div class="center label">-->
 
-<label id="label">kirumasuta tic tac toe</label>
+<!--<label id="label" class="wf-nicomoji">ロシアのデジタル</label>-->
 
+<!--</div>-->
+<div id="container" class="jp">
+<!--    <div class="bar_content slider">-->
+<!--        ロシアのデジタル-->
+<!--    </div>-->
+    <div id="circle">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+            <defs>
+                <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+            </defs>
+            <circle cx="150" cy="100" r="75" fill="none"/>
+            <g>
+                    <use xlink:href="#circlePath" fill="none"/>
+                <text fill="#000">
+                        <textPath id="changing" xlink:href="#circlePath">ロシアのデジタル</textPath>
+                    </text>
+                </g>
+        </svg>
+    </div>
 </div>
 
-<div class="canvas">
-<!--add canvas for three js-->
-</div>
+
+
+<!--<div class="canvas">-->
+<!--&lt;!&ndash;add canvas for three js&ndash;&gt;-->
+<!--</div>-->
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/96/three.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!--<script src="js/hover.js" type="text/javascript"></script>-->
 
+<!--<script src="js/hover.js" type="text/javascript"></script>-->
 <!--<script src="js/fonts_changing.js" type="text/javascript"></script>-->
-<!--<script src="js/changing_auto.js" type="text/javascript"></script>-->
+<script src="js/changing_auto.js" type="text/javascript"></script>
+<script src="js/text_anim_loading.js" type="text/javascript"></script>
 
 
 </html>
+
+<!--загрузку видоса можно обычграть начальной анимацией-->

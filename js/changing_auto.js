@@ -1,12 +1,14 @@
-var fonts = ['Webdings','Parchment', 'Poor Richard','Maiandra GD','a_AlternaSw','Wingdings'];
-
+var templateText = ['loading','подождите, пока не готово.','ロシアのデジタル'];
+var templateFont = ['Nico Moji','F77 Minecraft','Nico Moji'];
+var label = document.getElementById('changing');
 
 var i = 0;
 
 setInterval(function (){
-    if(i > fonts.length)
+    if(i > templateText.length)
     {i=0;}
-    label.style.fontFamily = fonts[i];
+
+    label.style.fontFamily = templateFont[i];
+    label.innerHTML = templateText[i];
     i++;
-    centralize();
-},300);
+},2500);
