@@ -8,19 +8,29 @@ document.getElementsByTagName("head")[0].appendChild(cssAnimation);
 
 //__________________
 
-var obj_anim = document.getElementById('container');
+var obj_anim_1 = document.getElementById('container');
+// var obj_anim_2 = document.getElementById('contact');
 var obj_track = document.getElementById('moving');
 
+
+let offset_y = document.getElementById('container');
+let offset_x = document.getElementById('circle_svg');
+
 document.addEventListener('mousemove', (event) => {
+
+    //shake anim
     if (event.clientX < obj_track.getBoundingClientRect().x+obj_track.getBoundingClientRect().width
             && event.clientX > obj_track.getBoundingClientRect().x
         &&
         event.clientY < obj_track.getBoundingClientRect().y+obj_track.getBoundingClientRect().height
             && event.clientY > obj_track.getBoundingClientRect().y){
-        obj_anim.style.animation = 'shake 0.5s infinite';
+        obj_anim_1.style.animation = 'shake 0.5s infinite';
+        // obj_anim_2.style.animation = 'shake 0.5s infinite';
     }
-    else if (obj_anim.style.animation !== null){
-        obj_anim.style.animation = '';
+    else if (obj_anim_1.style.animation !== null){
+        obj_anim_1.style.animation = '';
+        // obj_anim_2.style.animation = '';
     }
+    //shake anim
 
 });
