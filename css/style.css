@@ -18,7 +18,10 @@
 body{
     overflow-y: hidden;
     overflow-x: hidden;
-    background-color: #222831;
+    /*background-color: #F67280;*/
+    /*background: url("../folder/noise_black.jpg") round;*/
+    background: url("../folder/7Rwl.gif");
+    background-size: cover;
 }
 
 .trigger{
