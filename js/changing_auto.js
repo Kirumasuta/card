@@ -5,6 +5,8 @@ let label = document.getElementById('changing');
 let circle_el = document.getElementById('container');
 let circle_svg = document.getElementById('circle_svg');
 
+let box = document.getElementsByTagName('canvas')[0];
+
 let i = 0;
 let r = 0;
 var x = 0;
@@ -34,7 +36,7 @@ let centralize = function (){
     y = $(window).width()/2-400;
     circle_svg.style.marginLeft = y + 'px';
 
-
+    draw_box();
 };
 
 centralize();
