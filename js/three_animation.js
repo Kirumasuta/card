@@ -21,7 +21,7 @@ window.addEventListener("resize", () => {
 });
 
 const cube = new THREE.BoxGeometry(2,2,2);
-const material_cube = new THREE.MeshBasicMaterial( { color: 0xf4f347} );
+const material_cube = new THREE.MeshNormalMaterial( { color: 0xf4f347, wireframe:true} );
 const mesh_cube = new THREE.Mesh(cube,material_cube);
 scene.add( mesh_cube );
 
