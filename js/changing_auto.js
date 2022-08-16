@@ -36,7 +36,6 @@ let centralize = function (){
     y = $(window).width()/2-400;
     circle_svg.style.marginLeft = y + 'px';
 
-    draw_box();
 };
 
 centralize();

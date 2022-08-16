@@ -12,5 +12,8 @@
     <orderEntry type="library" name="three.js" level="application" />
     <orderEntry type="library" name="gsap" level="application" />
     <orderEntry type="library" name="three-css3drenderer" level="application" />
+    <orderEntry type="library" name="gsap" level="application" />
+    <orderEntry type="library" name="three.js" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
   </component>
 </module>
